@@ -1,0 +1,36 @@
+.badge {
+  width: fit-content;
+  padding: 2px 8px;
+  font-size: 10px;
+  border-radius: 16px;
+  background: var(--primary);
+  font-weight: 700;
+  color: var(--white-color);
+}
+
+.btn-success {
+  background-color: var(--success);
+  &:hover {
+    background: var(--success-hover);
+  }
+}
+
+.btn-warning {
+  background-color: var(--warning);
+  &:hover {
+    background: var(--warning-hover);
+  }
+}
+
+.btn-error {
+  background-color: var(--error);
+  &:hover {
+    background: var(--error-hover);
+  }
+}
+.btn-info {
+  background-color: var(--info);
+  &:hover {
+    background: var(--info-hover);
+  }
+}

@@ -1,0 +1,50 @@
+.btn {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    outline: none;
+    padding: 6px 16px;
+    font-size: 18px;
+    border-radius: 8px;
+    background: #334afd;
+    width: fit-content;
+    text-transform: capitalize;
+    color: var(--white-color);
+    box-shadow: 0px 12.116715431213379px 16.233430862426758px 0px
+      rgba(51, 74, 253, 0.15);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      background: var(--primary-hover);
+    }
+  }
+  
+  .btn-success {
+    background-color: var(--success);
+    &:hover {
+      background: var(--success-hover);
+    }
+  }
+  
+  .btn-warning {
+    background-color: var(--warning);
+    &:hover {
+      background: var(--warning-hover);
+    }
+  }
+  
+  .btn-error {
+    background-color: var(--error);
+    &:hover {
+      background: var(--error-hover);
+    }
+  }
+  .btn-info {
+    background-color: var(--info);
+    &:hover {
+      background: var(--info-hover);
+    }
+  }
+  

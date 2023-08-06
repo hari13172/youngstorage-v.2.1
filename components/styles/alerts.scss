@@ -1,0 +1,31 @@
+.info-container {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  border-radius: 20px;
+  background: var(--info-alert-bg);
+  padding: 8px 16px;
+  padding-left: 24px;
+  position: relative;
+   &::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 100%;
+    background-color: var(--info);
+    border-radius: 20px 0 0 20px;
+   }
+
+
+  .low {
+    display: flex;   
+    flex-direction: column;
+    h1{
+      text-transform: capitalize;
+    }
+  }
+}

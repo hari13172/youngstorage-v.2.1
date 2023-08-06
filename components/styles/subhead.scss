@@ -1,0 +1,21 @@
+.dash {
+    display: flex;
+    align-items: center;
+    color: var(--nav-font-hover);
+    svg{
+        stroke: var(--nav-font-hover);
+    }
+    a{
+        cursor: pointer;
+        all: unset;
+        color: var(--nav-font-hover);
+        transition: 0.3s ease-in-out;
+        &:hover{
+            cursor: pointer;
+            color: var(--primary-color);
+        }
+    }
+    b{
+        color: var(--input-color);
+    }
+  }

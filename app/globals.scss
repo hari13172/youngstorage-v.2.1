@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --dark: #00171f;
+  --light-bg: #f1f3f6;
+  --primary-color: #334afd;
+  --primary-hover: #1124ba;
+  --input-color: #555;
+  --text1-color: #fd7401;
+  --text2-color: #000000;
+  --white-color: #ffffff;
+  --background-color: #f1f3f6;
+  --btn-hover: #6e7dee;
+  --nav-font: #b4b5b7;
+  --nav-font-hover: #767676;
+  --info-color: #5458f7;
+  --button-color: #19af66;
+  --button1-color: #334afd;
+  --success: #19af66;
+  --success-hover: #048748;
+  --error: #f35746;
+  --error-hover: #c83120;
+  --warning: #f2c94c;
+  --warning-hover: #caa023;
+  --info: #5458f7;
+  --info-hover: #373ada;
+  --info-alert-bg: #e1e3f6;
+  --terminal-color: #003459;
+  --fixed-width-skil-menu: calc(100% - 219px);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.loadingbar {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alert-msg-box {
+  position: fixed;
+  top: -100px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  min-width: 250px;
+  animation: alertshow 0.4s 0.1s ease-in-out forwards;
+  z-index: 2000;
+}
+
+@keyframes alertshow {
+  60% {
+    top: 15px;
+  }
+
+  80% {
+    top: 5px;
+  }
+
+  100% {
+    top: 10px;
+  }
+}

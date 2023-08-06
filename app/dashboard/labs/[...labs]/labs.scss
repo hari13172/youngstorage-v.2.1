@@ -1,0 +1,178 @@
+.ubuntu-container {
+  width: 100%;
+  .flex {
+    width: 100%;
+    display: flex;
+    margin-top: 24px;
+    justify-content: space-between;
+    padding: 24px;
+    border-radius: 16px;
+    background: #fff;
+    /* primary shadow */
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    .ubuntu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      .alter {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 6px;
+
+        h1 {
+          font-size: 20px;
+          text-transform: capitalize;
+        }
+
+        .bn1 {
+          padding: 2px 8px;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          border: none;
+          border-radius: 8px;
+          background: #f35746;
+        }
+
+        .bn2 {
+          padding: 2px 8px;
+          justify-content: center;
+          align-items: center;
+          border: none;
+          border-radius: 8px;
+          background: #f35746;
+        }
+        .bn3 {
+          padding: 2px 8px;
+          justify-content: center;
+          align-items: center;
+          border: none;
+          border-radius: 8px;
+          background: #f2c94c;
+        }
+      }
+    }
+  }
+
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    gap: 10px;
+  }
+
+  .content {
+    display: flex;
+    // width: 100%;
+    // height: 370px;
+    padding: 20px 38px;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 16px;
+    background: #fff;
+    gap: 50px;
+    margin-top: 30px;
+
+    /* primary shadow */
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+
+    .left {
+      width: 100%;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+
+      h3 {
+        font-size: 18px;
+        border-radius: 8px;
+        background: #f0f2f5;
+        font-weight: 400;
+        padding: 8px;
+      }
+    }
+    .right {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+      border-left: 3px solid black;
+      padding-right: -30px;
+
+      h3 {
+        font-size: 18px;
+        font-weight: 400;
+        width: 90%;
+        padding: 8px;
+        background: #f0f2f5;
+      }
+
+      .prop {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // gap: 100px;
+      }
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        background-color: #f1f3f6;
+      }
+    }
+  }
+
+  .terminal-main-box {
+    background-color: var(--dark);
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 219px);
+    right: 0;
+    .terminal-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 32px;
+      background: var(--white-color);
+      h1 {
+        font-size: 18px;
+      }
+      svg {
+        transition: 0.3s ease-in-out;
+        transform: rotate(180deg);
+      }
+      svg.active {
+        transform: rotate(360deg);
+      }
+    }
+    .new {
+      display: flex;
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      padding: 0 16px;
+      align-items: flex-start;
+      background: var(--terminal-color);
+      transition: 0.3s ease-in-out;
+      .prompt{
+        color: var(--btn-hover);
+        overflow: auto;
+      }
+    }
+    .new.active {
+      height: 150px;
+      padding: 16px;
+      overflow: auto;
+    }
+  }
+}

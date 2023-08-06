@@ -1,0 +1,14 @@
+.dashboard-container-main-app{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--light-bg);
+    display: flex;
+    overflow: hidden;
+    .dashboard-dynamic-content{
+        width: 100%;
+        height: 100%;
+        padding: 32px;
+        overflow: auto;
+        position: relative;
+    }
+}

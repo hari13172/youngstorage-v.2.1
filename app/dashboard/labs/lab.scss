@@ -1,0 +1,35 @@
+.lab-container {
+  width: 100%;
+  .lab-box {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .labs {
+    background-color: brown;
+    border-radius: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    button {
+      width: 100%;
+      bottom: 0px;
+      left: 0;
+      padding: 12px 16px;
+      font-weight: 600;
+      color: var(--dark);
+      cursor: pointer;
+      font-size: 20px;
+      border: none;
+      outline: none;
+    }
+    img {
+      max-width: 400px;
+      height: 100%;
+    }
+  }
+}

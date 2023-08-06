@@ -1,0 +1,92 @@
+.hov-container {
+  height: 100vh;
+  width: fit-content;
+  padding: 16px 24px;
+  background-color: var(--dark);
+  color: var(--white-color);
+  stroke: var(--white-color);
+  position: relative;
+
+  .hov-center {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+
+    .logo-header {
+      justify-content: center;
+      align-items: center;
+      h1 {
+        font-size: 24px;
+      }
+      .beta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        span {
+          font-size: small;
+        }
+        b{
+          text-transform: capitalize;
+          font-size: small;
+          background-image: linear-gradient(to right,var(--btn-hover),var(--primary-color));
+          padding: 4px 8px;
+          border-radius: 8px;
+        }
+      }
+    }
+    .main-menu {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .cont {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        text-transform: capitalize;
+        cursor: pointer;
+        b{
+          position: relative;
+          z-index: 1;
+          padding: 2px 4px;
+          transition: 0.3s ease-in-out;
+          &::before{
+            content: '';
+            transition: 0.3s ease-in-out;
+            position: absolute;
+            width: 0;
+            height: 0;
+            background-color: var(--primary-color);
+            z-index: -1;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 4px;
+          }
+        }
+      }
+      .active{
+          color: var(--primary-color);
+          font-weight: 700;
+          b{
+            &::before{
+              width: 100%;
+              height: 100%;
+            }
+          }
+      }
+    }
+  }
+}
+
+@keyframes menu {
+  100% {
+    opacity: 1;
+    width: 200px;
+  }
+}
